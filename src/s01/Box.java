@@ -11,6 +11,7 @@ public class Box extends Rectangle implements Colorable {
 	private double border;
 	private LineType type;
 	private Color c = Color.rgb(0, 0, 0);
+	private int test;
 
 	public Box(double x0, double y0, double x1, double y1, double border, LineType type) {
 		super(x0, y0, x1, y1);
