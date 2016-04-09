@@ -1,12 +1,12 @@
 package s02;
 
-public class Case {
+public class Cell {
 
   private boolean flag;
   private boolean mine;
   private boolean open;
 
-  public Case(boolean mine) {
+  public Cell(boolean mine) {
     flag = false;
     open = false;
     this.mine = mine;
