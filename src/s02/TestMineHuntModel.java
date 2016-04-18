@@ -9,7 +9,7 @@ public class TestMineHuntModel {
 		// Test method initNewGame:
 		System.out.println(mineHuntModel.toString());
 		int countMine = 0;
-		Cell[][] listCell = mineHuntModel.getMineHunt();
+		CellButton[][] listCell = mineHuntModel.getMineHunt();
 		for (int i = 0; i < listCell.length; i++) {
 			for (int j = 0; j < listCell[i].length; j++) {
 				if (listCell[i][j].isMine()) {
@@ -25,10 +25,10 @@ public class TestMineHuntModel {
 		}
 
 		// Create a grid fix to test method
-		Cell[][] fixListCell = new Cell[10][10];
+		CellButton[][] fixListCell = new CellButton[10][10];
 		for (int i = 0; i < fixListCell.length; i++) {
 			for (int j = 0; j < fixListCell[i].length; j++) {
-				fixListCell[i][j] = new Cell(false);
+				fixListCell[i][j] = new CellButton(i,j);
 			}
 		}
 		// Create mine fix
