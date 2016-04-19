@@ -1,9 +1,12 @@
 package s02;
 
-public class TestMineHuntModel {
+import javafx.application.Application;
+import javafx.stage.Stage;
+
+public class TestMineHuntModel extends Application{
 
 	public static void main(String[] args) {
-
+				
 		int nbMine = 10;
 		MineHuntModel mineHuntModel = new MineHuntModel(nbMine, 10, 10);
 		// Test method initNewGame:
@@ -43,6 +46,12 @@ public class TestMineHuntModel {
 			System.out.println("Error with NeightborMines");
 		}
 
+	}
+
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
